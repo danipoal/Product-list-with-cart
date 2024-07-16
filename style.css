@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'RedHatTextVariable';
+    src: url('./assets/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RedHatTextVariable';
+    src: url('./assets/fonts/RedHatText-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+:root{
+    --rojo: hsl(14, 86%, 42%);
+    --verde: hsl(159, 69%, 38%);
+    --rosa50: hsl(20, 50%, 98%);
+    --rosa1: hsl(13, 31%, 94%);
+    --rosa3: hsl(14, 25%, 72%);
+    --rosa4: hsl(7, 20%, 60%);
+    --rosa5: hsl(12, 20%, 44%);
+    --rosa9: hsl(14, 65%, 9%);
+}
+body {
+    font-family: 'RedHatTextVariable', sans-serif; /*- Weights: 400, 600, 700*/
+    background-color: var(--rosa1);
+}
+@media (max-width: 768px) {
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+    }
+}
+.desserts{
+
+}
+
+
+.cart{
+    background-color: var(--rosa50);
+    height: fit-content;
+}
