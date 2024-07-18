@@ -25,25 +25,68 @@ body {
     font-family: 'RedHatTextVariable', sans-serif; /*- Weights: 400, 600, 700*/
     background-color: var(--rosa1);
 }
-@media (max-width: 768px) {
-    .btn {
-        font-size: 0.8rem;
-        padding: 8px 16px;
-    }
+.cont{
+    position: relative;
+    text-align: center;
 }
-
-@media (max-width: 576px) {
-    .btn {
-        font-size: 0.7rem;
-        padding: 6px 12px;
-    }
+.item-btn{
+    width: 65%;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 100%;
+    /*Posicionaelbotónenelcentroverticalmente*/left: 50%;
+    /*Posicionaelbotónenelcentrohorizontalmente*/transform: translate(-50%, -50%);
+    /*Centraelbotónexactamente*/z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border: 1px solid var(--rosa5);
+    background-color: var(--rosa50);
+    font-weight: 500;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
 }
-.desserts{
-
+.item-btn:hover{
+    background-color: var(--rosa50);
 }
-
-
+.orange{
+    color: #c73b0f;
+}
 .cart{
     background-color: var(--rosa50);
     height: fit-content;
 }
+/*  X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+ }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .item-btn{
+        font-size: 1rem;
+}
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .item-btn{
+        width: 30% !important;
+     }
+ }
+
+ /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .item-btn{
+       font-size: 0.8rem;
+       width: 75%;
+       padding: 3px;
+    }
+ }
+
+ /* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+ }
