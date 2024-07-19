@@ -1,3 +1,4 @@
+import {itemHtml} from "./constantes.js";
 const rellenarItems = (data) => {
     const items = document.querySelectorAll('#productItem');
 
@@ -8,7 +9,7 @@ const rellenarItems = (data) => {
         const titulo = item.querySelector('#itemName');
         const type = item.querySelector('#productType');
         const price = item.querySelector('#itemPrice');
-        console.log(data[jsonIndex].name);
+        // console.log(data[jsonIndex].name);
 
         imagen.src = data[jsonIndex].image.desktop;
         titulo.textContent = data[jsonIndex].name;
@@ -17,12 +18,18 @@ const rellenarItems = (data) => {
         jsonIndex++;
     })
 }
-
+const inyectarItem = (data) => {
+    const productRow = document.querySelector('#productRow');
+    data.forEach( () => {
+        productRow.innerHTML+= itemHtml;
+    })
+}
 
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
         // console.log(data);
+        inyectarItem(data);
         rellenarItems(data);
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
