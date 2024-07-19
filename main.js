@@ -24,7 +24,10 @@ const inyectarItem = (data) => {
         productRow.innerHTML+= itemHtml;
     })
 }
-
+const addElementToCart = () => {
+    const addCartButtons = document.querySelectorAll('#addToCartItem');
+    //Para cada boton que use sus cosas
+}
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
