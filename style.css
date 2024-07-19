@@ -25,6 +25,14 @@ body {
     font-family: 'RedHatTextVariable', sans-serif; /*- Weights: 400, 600, 700*/
     background-color: var(--rosa1);
 }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 .cont{
     position: relative;
     text-align: center;

@@ -12,3 +12,17 @@ export const itemHtml = `        <div id="productItem" class="col">
           </p>
           <p id="itemPrice" class="orange" style="font-weight: 600;"></p>
         </div>`;
+export const cartItem = `      <div id=cartItem class="cart-item position-relative">
+        <p id="cartItemName" class="my-1" style="font-size: 0.85rem; font-weight: 600;">Classic Tiramisu</p>
+        <svg class="remove-button" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none"
+          viewBox="0 0 10 10">
+          <path fill="#CAAFA7"
+            d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z" />
+        </svg>
+        <div class="cart-item-stats d-flex mb-0" style="font-size: 0.85rem; font-weight: 600;">
+          <p id="cartItemCount" class="orange mb-0">1x</p>
+          <p id="cartItenPrice" class="mx-2 mb-0 text-muted">@$5.50</p>
+          <p id="cartItemTotal" class="mb-2" style="color: var(--rosa5);">$5.50</p>
+        </div>
+        <div class="cart-item-separator mt-0 mb-2"></div>
+      </div>`
